@@ -1,0 +1,51 @@
+
+.ct_register{
+    width: 40%;
+    height:800px;
+    margin-top: 20px;
+}
+.registro{
+    width: 80%;
+    height: 300px;
+    margin: 30px auto;
+    height: 80%;
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.input_registro{
+    width: 80%;
+    height: 30px;
+    border-radius: 3px;
+}
+.contanier__btns-create{
+    width:80%;
+    height: 30px;
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-action{
+    width:40%;
+    height:30px;
+    border-radius: 5px;
+    border: none;
+    border:2px solid  rgb(66, 66, 240);
+    cursor: pointer;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+.btn-action:hover{
+    background-color: rgb(71, 71, 246);
+    color: white;
+
+}
+.danger{
+    border:2px solid  rgb(240, 66, 66);
+}
+.danger:hover{
+    background-color:rgb(240, 66, 66);
+}
