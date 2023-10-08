@@ -10,7 +10,8 @@ const Routers = () => {
          <Routes>
             <Route path='/' element={<List/>}></Route>
             <Route path='/crear' element={<Create/>}></Route>
-            <Route path='/actualizar' element={<Actualizar/>}></Route>
+            <Route path='/actualizar/:identity' element={<Actualizar/>}></Route>
+            <Route path='*' >No encontrada</Route>
          </Routes>
         </BrowserRouter>
    
