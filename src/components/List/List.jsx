@@ -11,7 +11,7 @@ const List = () => {
   useEffect(()=>{
     const getAllUsersRequest=async ()=>{
       try {
-        const request=await fetch("http://localhost:4000/get-all-users");
+        const request=await fetch(process.env.REACT_APP_URL_API+"/get-all-users");
         const response=await request.json();
         // console.log(response.data);
         setUsers([...response.data]);
