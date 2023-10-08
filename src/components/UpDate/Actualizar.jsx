@@ -27,7 +27,7 @@ const Actualizar = () => {
   const actualizarUsuario = async (e) => {
     e.preventDefault();
     try {
-      const request = await fetch("http://localhost:4000/up-date-user", {
+      const request = await fetch(process.env.REACT_APP_URL_API+"/up-date-user", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

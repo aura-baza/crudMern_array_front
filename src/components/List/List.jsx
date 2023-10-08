@@ -23,7 +23,7 @@ const List = () => {
   },[])
  const deleteUserRequest=async(identity)=>{
   try {
-    const request = await fetch("http://localhost:4000/delete-user/"+identity, {
+    const request = await fetch(process.env.REACT_APP_URL_API+"/delete-user/"+identity, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

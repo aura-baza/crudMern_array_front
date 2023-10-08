@@ -21,7 +21,7 @@ const Create = () => {
       if (newUser.name==="" || newUser.identity==="" || newUser.email==="" || newUser.phone==="") {
         alert("Hay campos vacíos")
       }else{
-        const request=await fetch("http://localhost:4000/create-user",{
+        const request=await fetch(process.env.REACT_APP_URL_API+"/create-user",{
           method:"POST",
           "headers":{
             "Content-Type": "application/json",
